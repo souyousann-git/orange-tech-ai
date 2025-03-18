@@ -39,7 +39,7 @@
 
     <section id="contact">
         <h2>联系我们</h2>
-        <form id="contactForm">
+        <form id="form">
             <label for="name">姓名：</label>
             <input type="text" id="name" required>
         
@@ -49,11 +49,17 @@
             <label for="message">留言：</label>
             <textarea id="message" required></textarea>
         
-            <button type="submit">提交</button>
+<!--             <button type="submit">提交</button> -->
+            <input type="submit" id="button" value="提交" >
         </form>
         <p id="responseMessage"></p>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('uc9t3t0rFUBEbueMS')
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

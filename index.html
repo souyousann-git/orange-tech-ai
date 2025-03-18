@@ -6,6 +6,7 @@
     <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
     <title>橙子科技 - 官方网站</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
@@ -41,18 +42,18 @@
         <form id="contactForm">
             <label for="name">姓名：</label>
             <input type="text" id="name" required>
-            
+        
             <label for="email">邮箱：</label>
             <input type="email" id="email" required>
-            
+        
             <label for="message">留言：</label>
             <textarea id="message" required></textarea>
-            
+        
             <button type="submit">提交</button>
         </form>
         <p id="responseMessage"></p>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

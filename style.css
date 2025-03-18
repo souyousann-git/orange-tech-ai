@@ -30,9 +30,10 @@ nav ul li a {
 section {
     padding: 20px;
     background: white;
-    margin: 20px;
-    border-radius: 5px;
+    margin: 20px auto;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
 }
 
 .service {
@@ -47,18 +48,49 @@ form {
     flex-direction: column;
 }
 
-label, input, textarea, button {
-    margin: 5px 0;
+.field {
+    margin-bottom: 15px;
 }
 
-button {
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
     background-color: #ff6600;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
-button:hover {
+input[type="submit"]:hover {
     background-color: #cc5500;
+}
+
+.hidden {
+    display: none;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
 }
